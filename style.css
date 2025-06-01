@@ -87,4 +87,25 @@ body {
     font-size: 1rem;
     margin-left: 0.5rem;
   }
+  .notification {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f43f5e;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 999px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    z-index: 9999;
+    animation: fadeInOut 5s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  }
   
