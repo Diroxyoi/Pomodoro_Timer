@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro ⏳</h1>
+    <div id="timer">25:00</div>
+
+    <div class="mode-buttons">
+      <button onclick="setMode('pomodoro')">🍅 Pomodoro</button>
+      <button onclick="setMode('short')">☕ Short Break</button>
+      <button onclick="setMode('long')">💤 Long Break</button>
+    </div>
+
+    <div class="buttons">
+      <button id="start">▶️ เริ่ม</button>
+      <button id="pause">⏸ หยุด</button>
+      <button id="reset">🔄 รีเซ็ต</button>
+    </div>
+
+    <div class="sound-select">
+      <label for="sound">🔊 เลือกเสียง:</label>
+      <select id="sound">
+        <option value="bell.mp3">🔔 Bell</option>
+        <option value="alarm.mp3">🚨 Alarm</option>
+        <option value="ding.mp3">🎵 Ding</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
