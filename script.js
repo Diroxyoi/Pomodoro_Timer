@@ -17,9 +17,10 @@ const resetBtn = document.getElementById('reset');
 const soundSelect = document.getElementById('sound');
 
 function updateDisplay() {
-  const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
-  const seconds = String(timeLeft % 60).padStart(2, '0');
-  timerDisplay.textContent = `${minutes}:${seconds}`;
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+  timerDisplay.textContent =
+    String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
 }
 
 function playSound() {
