@@ -6,6 +6,7 @@ let currentMode = 'pomodoro';
 const MODES = {
   pomodoro: 25 * 60,
   short: 5 * 60,
+  mid: 10 * 60,
   long: 15 * 60
 };
 
